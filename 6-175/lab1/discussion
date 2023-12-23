@@ -1,0 +1,16 @@
+Q1:
+	3	Gates in 1-bit multiplexer
+	15	Gates in 5-bit multiplexer
+	3n	Gates in n-bit multiplexer
+
+Q2:
+	40						Gates in 8-bit ripple-carry adder
+	60 + 4 * 3 + 3 = 75		Gates in 8-bit carry-select adder
+
+Q3:
+	8 * A			for 8-bit ripple-carry adder
+	4 * A  + M		for 8-bit carry-select adder
+
+Q4:
+	1 + 1 + 2.5 
+	
