@@ -1,2 +1,34 @@
 Q1:
+        Method                  Read                    Write
+        notFull                 not_full
         
+        notEmpty                not_empty
+        
+        enq                     not_full                not_full
+                                enq_p                   enq_p
+                                deq_p                   not_empty
+                                                        data[enq_p]
+
+        deq                     not_empty               deq_p
+                                deq_p                   not_empty
+                                enq_p                   not_full
+
+        first                   not_empty
+                                data[deq_p]
+
+        clear                                           enq_p
+                                                        deq_p
+                                                        not_empty
+                                                        not_full
+
+Q2:
+        method   notFull        notEmpty        enq     deq     first   clear
+        notFull      CF               CF          <       <       CF       <
+        notEmpty     CF               CF          <       <       CF       <
+        enq          >                >           C       C       >        C
+        deq          >                >           C       C       >        C
+        first        CF               CF          <       <       CF       <
+        clear        >                >           C       C       >        C ?//write same value, does it conflict?
+
+
+Q3:
